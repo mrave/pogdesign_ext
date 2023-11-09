@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "PogDesign Downloader",
+  "description": "",
+  "version": "1.0",
+
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.pogdesign.co.uk/cat/*"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
